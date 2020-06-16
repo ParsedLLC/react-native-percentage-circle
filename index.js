@@ -219,7 +219,7 @@ function InnerCircle(props) {
 }
 
 class PercentageCircle extends Component {
-  propTypes: {
+  propTypes = {
     color: React.PropTypes.string, // 进度条颜色
     bgcolor: React.PropTypes.string, // 背景条颜色
     innerColor: React.PropTypes.string, // 环内区域背景色
