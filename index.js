@@ -219,18 +219,6 @@ function InnerCircle(props) {
 }
 
 class PercentageCircle extends Component {
-  propTypes = {
-    color: React.PropTypes.string, // 进度条颜色
-    bgcolor: React.PropTypes.string, // 背景条颜色
-    innerColor: React.PropTypes.string, // 环内区域背景色
-    radius: React.PropTypes.number, // 外圆半径
-    percent: React.PropTypes.number, // 进度（百分比分子）
-    borderWidth: React.Proptypes.number, // 环厚度（同心圆半径差值）
-    textStyle: React.Proptypes.array,
-    disabled: React.PropTypes.bool,
-    rotate: React.PropTypes.number // 进度环起点与 12 点方向的夹角 0 - 360 度
-  };
-
   render() {
     let { bgcolor, disabled, radius } = this.props;
     let diameter = radius * 2;
